@@ -1,0 +1,10 @@
+{"at":0,"kind":"object","record":{"asset":"raw","digest":"r","revision":1,"deps":[]}}
+{"at":1,"kind":"copy","record":{"asset":"raw","node":"one","region":"r","state":"readable"}}
+{"at":2,"kind":"reclaim","record":{"asset":"raw","node":"one"}}
+{"at":3,"kind":"delete_ack","record":{"asset":"raw","node":"one","state":"locked"}}
+{"at":4,"kind":"pin","record":{"program":"late","rev":2,"roots":["raw"],"region":"r"}}
+{"at":5,"kind":"read","record":{"program":"late","rev":2,"region":"r","lease":"after","expires":12}}
+{"at":6,"kind":"restart","record":{}}
+{"at":7,"kind":"copy","record":{"asset":"raw","node":"two","region":"r","state":"readable"}}
+{"at":8,"kind":"delete_ack","record":{"asset":"raw","node":"one","state":"deleted"}}
+{"at":9,"kind":"inspect","record":{"program":"late"}}

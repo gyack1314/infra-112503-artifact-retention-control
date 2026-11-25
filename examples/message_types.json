@@ -1,0 +1,13 @@
+[
+  "copy",
+  "delete_ack",
+  "inspect",
+  "object",
+  "open_read",
+  "pin",
+  "read",
+  "read_done",
+  "reclaim",
+  "restart",
+  "unpin"
+]

@@ -1,0 +1,15 @@
+{"at":0,"kind":"object","record":{"asset":"raw","digest":"a","revision":1,"deps":[]}}
+{"at":0,"kind":"object","record":{"asset":"mix","digest":"m","revision":1,"deps":["raw"]}}
+{"at":1,"kind":"copy","record":{"asset":"raw","node":"west","region":"r","state":"readable"}}
+{"at":1,"kind":"copy","record":{"asset":"mix","node":"west","region":"r","state":"readable"}}
+{"at":2,"kind":"pin","record":{"program":"a","rev":1,"roots":["mix"],"region":"r"}}
+{"at":2,"kind":"pin","record":{"program":"b","rev":1,"roots":["raw"],"region":"r"}}
+{"at":3,"kind":"read","record":{"program":"a","rev":1,"region":"r","lease":"L","expires":7}}
+{"at":4,"kind":"open_read","record":{"lease":"L","node":"west"}}
+{"at":5,"kind":"unpin","record":{"program":"a","rev":1}}
+{"at":6,"kind":"copy","record":{"asset":"raw","node":"new","region":"r","state":"copying"}}
+{"at":8,"kind":"reclaim","record":{"asset":"raw","node":"west"}}
+{"at":9,"kind":"copy","record":{"asset":"raw","node":"new","region":"r","state":"readable"}}
+{"at":10,"kind":"read_done","record":{"lease":"L","node":"west"}}
+{"at":11,"kind":"reclaim","record":{"asset":"raw","node":"west"}}
+{"at":12,"kind":"inspect","record":{"asset":"raw"}}
